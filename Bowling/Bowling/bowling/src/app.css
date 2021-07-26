@@ -1,0 +1,21 @@
+﻿.title{
+    color:midnightblue;
+    padding-bottom:20px;
+}
+
+.scores {
+    border:solid 1px black;
+}
+
+.scores thead{
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+.buttons{
+    padding-top:20px;
+}
+
+.finalScore{
+    padding-top:5px;
+}

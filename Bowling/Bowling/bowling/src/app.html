@@ -1,0 +1,57 @@
+<template>
+  <h2 class="title">Bowling Scores</h2>
+  <div>
+    <table class="scores">
+      <thead>
+        <tr>
+          <td>
+            Frame
+          </td>
+          <td>
+            Score 1
+          </td>
+          <td>
+            Score 2
+          </td>
+          <td>
+            Score 3
+          </td>
+          <td>
+            Frame Score
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr repeat.for="i of 10">
+          <td>
+            ${i+1}
+          </td>
+          <td>
+            ${score1[i]}
+          </td>
+          <td>
+            ${score2[i]}
+          </td>
+          <td>
+            ${i === 9 ? score3 : null}
+          </td>
+          <td>
+            ${frameScores[i]}
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td class="buttons">
+            <button click.delegate="bowl()">Bowl!</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="finalScore">
+            Final Score: ${finalScore}
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</template>
